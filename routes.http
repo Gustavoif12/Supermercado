@@ -1,0 +1,31 @@
+POST http://localhost:3333/prateleira
+Content-Type: application/json
+
+{
+    "cor": "cinza",
+    "altura_cm": 170,
+    "comprimento_m": 3.5
+}
+
+###
+
+GET http://localhost:3333/prateleira
+
+###
+
+GET http://localhost:3333/prateleira?search=cinza
+
+###
+
+PUT http://localhost:3333/prateleira/4ef700af-ba8b-4277-b80d-16dff4aec731
+Content-Type: application/json
+
+{
+    "cor": "azul",
+    "altura_cm": 190,
+    "comprimento_m": 4.5
+}
+
+###
+
+DELETE http://localhost:3333/prateleira/4ef700af-ba8b-4277-b80d-16dff4aec731
